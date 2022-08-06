@@ -1,0 +1,55 @@
+@use 'variables';
+@use 'intial';
+@use 'mixins';
+
+.main-container{
+    width: 375px;
+    margin: auto;
+    &__back-ground-section{
+        background-image: url(../images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        position: relative;
+        height: 240px;
+    }
+    &__form-section{
+        border: 1px solid red;
+        padding: 90px 24px 45px;
+    }
+}
+
+.card{
+    position: absolute;
+    top: 126px;
+    left: 18px;
+    z-index: 1;
+    @include mixins.card('../images/bg-card-front.png');
+    
+    &__logo{
+        width: 55px;
+        margin-bottom: 30px;
+    }
+    &__number{
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+    &__details{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.6em;
+        &--uppercase{
+           text-transform: uppercase; 
+        }
+    }
+}
+
+.card-back{
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    @include mixins.card('../images/bg-card-back.png');
+    &__number{
+        margin-top: 45px;
+        text-align: right;
+        padding-right: 10px;
+    }
+}

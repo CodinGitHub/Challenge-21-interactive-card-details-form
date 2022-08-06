@@ -1,0 +1,13 @@
+@use 'variables';
+
+@mixin card ($url){
+    width: 288px;
+    height: 160px;
+    padding: 20px;
+    color: variables.$White;
+    background: {
+        image: url($url);
+        size: contain;
+        repeat: no-repeat;
+    }
+}
