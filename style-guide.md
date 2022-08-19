@@ -11,23 +11,24 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
-- Red (input errors): hsl(0, 100%, 66%)
+- Strong cyan: hsl(172, 67%, 45%)
 
 ### Neutral
 
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
 - White: hsl(0, 0%, 100%)
-- Light grayish violet: hsl(270, 3%, 87%)
-- Dark grayish violet: hsl(279, 6%, 55%)
-- Very dark violet: hsl(278, 68%, 11%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 18px
+- Font size (form inputs): 24px
 
 ### Font
 
-- Family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
-- Weights: 500
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- Weights: 700

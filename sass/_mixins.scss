@@ -1,28 +1,37 @@
 @use 'variables';
 
-@mixin card($url) {
-    width: 288px;
-    height: 160px;
-    color: variables.$White;
-    padding: 20px;
-    background: {
-        image: url($url);
-        repeat: no-repeat;
-        size: contain;
-    };
-    @media (min-width: 1440px){
-        width: 450px;
-        height: 247px;
-        padding: 30px;
-    }
+@mixin label {
+    display: block;
+    color: variables.$Dark-grayish-cyan;
+    font-size: 0.75em;
+    margin-bottom: 8px;
 }
 
-@mixin card-position($m-top, $m-left, $d-top, $d-left){
-    position: absolute;
-    top: $m-top;
-    left: $m-left;
-    @media (min-width: 1440px){
-        top: $d-top;
-        left: $d-left;
+@mixin input($icon){
+    font-family: variables.$font;
+    font-size: 1em;
+    text-align: right;
+    caret-color: variables.$Strong-cyan;
+    border-radius: 4px;
+    padding-right: 10px;
+    border: none;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 30px;
+    &:hover{
+        cursor: pointer;
+    }
+    &:focus{
+        outline: none;
+        border: 2px solid variables.$Strong-cyan;
+    }
+    &::-webkit-inner-spin-button{
+        -webkit-appearance: none; 
+    }
+    background: {
+        image: url($icon);
+        repeat: no-repeat;
+        position: 10px center;
+        color: variables.$Very-lightgrayish-cyan;
     }
 }

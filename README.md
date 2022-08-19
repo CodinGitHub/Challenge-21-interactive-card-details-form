@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive card details form
+# Frontend Mentor - Tip calculator app
 
-![Design preview for the Interactive card details form coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -22,7 +22,6 @@
 
 ✅Facebook: https://www.facebook.com/groups/codingtubers
 
-
 ►CURSOS:
 
 📕HTML5: https://bit.ly/CodingHTML01
@@ -31,13 +30,11 @@
 
 📙Javascript: http://bit.ly/CodingJS01
 
-
 ►LISTAS DE REPRODUCCIÓN RECOMENDADAS:
 
 📒Etiquetas HTML: https://bit.ly/HTMLShorts
 
 📗Todos los retos frontend: https://bit.ly/CodingRetos
-
 
 ►CLASES PARTICULARES:
 
