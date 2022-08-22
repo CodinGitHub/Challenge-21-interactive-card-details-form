@@ -2,66 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+  <title>Frontend Mentor | Interactive card details form</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <header class="header">
-    <h1 class="header__title">SPLI <br> TTER</h1>
-  </header>
-
-  <section class="calculator-container">
-    <div class="inputs-section">
-      <label for="bill" class="inputs-section__bill-label" >Bill</label>
-      <input id="bill" class="inputs-section__bill-input" type="number" value="100">
-
-      <fieldset class="btns">
-        <legend class="btns__legend">Select Tip %</legend>
-        <button class="btns__button btns__button--selected">5%</button>
-        <button class="btns__button">10%</button>
-        <button class="btns__button">15%</button>
-        <button class="btns__button">25%</button>
-        <button class="btns__button">50%</button>
-        <input class="btns__custom" type="number" placeholder="Custom">
-      </fieldset>
-
-      <label for="people" class="inputs-section__people-label" >Number of People <span id="alert"></span> </label>
-      <input id="people" class="inputs-section__people-input" min="1" type="number" value="5">
-    </div>
-
-    <div class="result-section">
-      <div class="results">
-
-        <div>
-          <p class="results__tip-amount">Tip Amount</p>
-          <p class="results__tip-person">/ person</p>
+  <main class="main-container">
+    <section class="main-container__background-section">
+      <div class="card">
+        <img class="card__logo" src="./images/card-logo.svg" alt="logo">
+        <p class="card__number">0000 0000 0000 0000</p>
+        <div class="card__details">
+          <p class="card__details-name">Jane Appleseed</p>
+          <p><span class="card__month" >00</span>/<span class="card__year">00</span></p>
         </div>
-
-        <p class="results__tip-value">0</p>
-
-        <div>
-          <p class="results__total-amount">Total</p>
-          <p class="results__total-person">/ person</p>
-        </div>
-
-        <p class="results__total-value">0</p>
-
       </div>
-      
-      <button class="result-section__reset">Reset</button>
 
-    </div>
-  </section>
+      <div class="card-back">
+        <p class="card-back__cvc">000</p>
+      </div>
+    </section>
+
+    <section class="main-container__form-section">
+      <form class="form" action="">
+        <label class="form__label" for="cardholder">Cardholder Name</label>
+        <input class="form__input" type="text" name="cardholder" id="cardholder" placeholder="e.g. Jane Appleseed">
+        <div class="form__cardholder--error error"></div>
+
+        <label class="form__label" for="cardNumber">Card Number</label>
+        <input class="form__input" type="text" name="cardNumber" id="cardNumber" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+        <div class="form__inputnumber--error error"></div>
+
+        <div class="form__date-cvc"><!-- grid -->
+          <!-- 1 -->
+          <label class="form__label" for="cardMonth">Exp. Date (MM/YY)</label>
+          <!-- 2 -->
+          <label class="form__label" for="cardCvc">CVC</label>
+          <!-- 3 -->
+          <div class="form__date">
+            <input class="form__input" type="text" maxlength="2" name="cardMonth" id="cardMonth" placeholder="MM">
+            <input class="form__input" type="text" maxlength="2" name="cardYear" id="cardYear" placeholder="YY">
+          </div>
+          <!-- 4 -->
+          <input class="form__input" type="text" maxlength="3" name="cardCvc" id="cardCvc" placeholder="e.g. 123">
+          <!-- 5 -->
+          <div class="form__errors-container">
+            <div class="form__input-mm--error error"></div>
+            <div class="form__input-yy--error error"></div>
+          </div>
+          <!-- 6 -->
+          <div class="form__input-cvc--error error"></div>
+        </div>
+        <input class="form__submit" type="submit" value="Confirm">
+      </form>
+
+      <!-- Completed state start -->
+
+      <section class="thanks-section">
+        <img class="thanks-section__img" src="./images/icon-complete.svg" alt="complete icon">
+        <h1 class="thanks-section__title">Thank you!</h1>
+        <p class="thanks-section__text">We've added your card details</p>
+        <button class="thanks-section__button">Continue</button>
+      </section>
+
+    </section>
+  </main>
+ 
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.youtube.com/CodingTube" target="_blank">David Ruiz</a>.
+    Coded by <a href="https://www.youtube.com/CodingTube" target="_blank" >David Ruiz</a>.
   </div>
+
   <script src="./main.js"></script>
 </body>
 </html>
